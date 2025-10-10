@@ -38,6 +38,22 @@ todosJogadores.forEach((j, i) => {
   lista.appendChild(div);
 });
 
+// Criar contador no HTML
+const contador = document.createElement("p");
+contador.id = "contador";
+contador.textContent = "Jogadores selecionados: 0";
+lista.parentElement.insertBefore(contador, lista.nextSibling); // insere logo depois da lista
+
+// Atualizar contador quando marcar/desmarcar
+const checkboxes = document.querySelectorAll("input[type=checkbox]");
+checkboxes.forEach(cb => {
+  cb.addEventListener("change", () => {
+    const selecionados = document.querySelectorAll("input[type=checkbox]:checked").length;
+    contador.textContent = `Jogadores selecionados: ${selecionados}`;
+  });
+});
+
+
 // Embaralhar array (igual ao rand() em C)
 function embaralhar(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -74,9 +90,10 @@ botaoGerar.addEventListener("click", () => {
     c => todosJogadores[c.value]
   );
 
-  if (selecionados.length < 10) {
-    resultado.innerHTML = "<p style='color:red'>Selecione pelo menos 10 jogadores.</p>";
-    return;
+  if (selecionados.length < 2) {
+  resultado.innerHTML = "<p style='color:red'>Selecione pelo menos 2 jogadores.</p>";
+  return;
+
   }
 
   const { timeA, timeB, somaA, somaB } = montarTimes(selecionados);
@@ -91,4 +108,3 @@ botaoGerar.addEventListener("click", () => {
     <p><b>Diferença total:</b> ${Math.abs(somaA - somaB)}</p>
   `;
 });
-
