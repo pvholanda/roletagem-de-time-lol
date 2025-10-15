@@ -2,18 +2,19 @@ const todosJogadores = [
   { nome: "Renato", peso: 22 },
   { nome: "Taka", peso: 23 },
   { nome: "Mauricio", peso: 16 },
-  { nome: "Mateus 41", peso: 25 },
-  { nome: "Marcos com u", peso: 10 },
+  { nome: "Mateus 41", peso: 26 },
+  { nome: "Marcos com u", peso: 15 },
   { nome: "Luigg", peso: 20 },
   { nome: "Flavio", peso: 20 },
-  { nome: "PV", peso: 19 },
+  { nome: "PV", peso: 21 },
   { nome: "Niku", peso: 20 },
   { nome: "Ismael", peso: 19 },
   { nome: "Dolza", peso: 15 },
   { nome: "Pato", peso: 19 },
   { nome: "Magrão", peso: 14 },
   { nome: "Maia", peso: 8 },
-  { nome: "Mthespsl", peso: 16 }
+  { nome: "Mthespsl", peso: 16 },
+  { nome: "Paulo", peso: 23 }
 ];
 
 const lista = document.getElementById("lista-jogadores");
