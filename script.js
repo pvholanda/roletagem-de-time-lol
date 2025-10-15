@@ -1,5 +1,5 @@
 const todosJogadores = [
-  { nome: "Renato", peso: 22 },
+  { nome: "Renato", peso: 27 },
   { nome: "Taka", peso: 23 },
   { nome: "Mauricio", peso: 16 },
   { nome: "Mateus 41", peso: 26 },
@@ -109,3 +109,4 @@ botaoGerar.addEventListener("click", () => {
     <p><b>Diferença total:</b> ${Math.abs(somaA - somaB)}</p>
   `;
 });
+
