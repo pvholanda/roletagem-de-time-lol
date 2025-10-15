@@ -1,20 +1,20 @@
 const todosJogadores = [
-  { nome: "Renato", peso: 27 },
-  { nome: "Taka", peso: 23 },
-  { nome: "Mauricio", peso: 16 },
-  { nome: "Mateus 41", peso: 26 },
-  { nome: "Marcos com u", peso: 15 },
-  { nome: "Luigg", peso: 20 },
-  { nome: "Flavio", peso: 20 },
-  { nome: "PV", peso: 21 },
-  { nome: "Niku", peso: 20 },
-  { nome: "Ismael", peso: 19 },
   { nome: "Dolza", peso: 15 },
-  { nome: "Pato", peso: 19 },
+  { nome: "Flavio", peso: 20 },
+  { nome: "Ismael", peso: 19 },
+  { nome: "Luigg", peso: 20 },
   { nome: "Magrão", peso: 14 },
   { nome: "Maia", peso: 8 },
+  { nome: "Marcos", peso: 15 },
+  { nome: "Mateus 41", peso: 26 },
+  { nome: "Mauricio", peso: 16 },
   { nome: "Mthespsl", peso: 16 },
-  { nome: "Paulo", peso: 23 }
+  { nome: "Niku", peso: 20 },
+  { nome: "Pato", peso: 19 },
+  { nome: "Paulo", peso: 23 },
+  { nome: "PV", peso: 21 },
+  { nome: "Renato", peso: 27 },
+  { nome: "Taka", peso: 21 }
 ];
 
 const lista = document.getElementById("lista-jogadores");
@@ -109,4 +109,5 @@ botaoGerar.addEventListener("click", () => {
     <p><b>Diferença total:</b> ${Math.abs(somaA - somaB)}</p>
   `;
 });
+
 
